@@ -1,0 +1,12 @@
+.container.content {
+    padding-top: 12%}
+.reg-header img {
+    width: 30%;
+    max-height: auto;
+    margin-bottom: 20px;
+}
+#btnIngreso, #btnRegistro {
+    font-size: 12pt;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}

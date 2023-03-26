@@ -1,0 +1,211 @@
+/* Boton Ingresar usuario deslogueado */
+.in{
+    margin-right: 5px;
+}
+.btningresar {
+        display: none!important;
+}
+@media screen and (max-width: 991px) {
+    .btningresar {
+        margin-top: 28px!important;
+        display: block!important;
+    }
+    .header-v6 .navbar-brand {
+        padding-top: 13px!important;
+        padding-right: 0px!important;
+        padding-left: 0px!important;
+    }
+}
+@media screen and (max-width: 440px) {
+    .header-v6 .navbar-brand {
+        padding-top: 13px!important;
+        padding-right: 0px!important;
+        padding-left: 0px!important;
+        width: 140px!important;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .header-v6 .navbar-brand {
+        padding-top: 13px!important;
+        padding-right: 0px!important;
+        padding-left: 0px!important;
+        width: 110px!important;
+    }
+}
+@media screen and (max-width: 350px) {
+    .header-v6 .navbar-brand {
+        padding-top: 13px!important;
+        padding-right: 0px!important;
+        padding-left: 0px!important;
+        width: 100px!important;
+    }
+}
+@media screen and (max-width: 385px) {
+    .header-v6 .navbar-brand {
+        padding-top: 13px!important;
+        padding-right: 0px!important;
+        padding-left: 0px!important;
+        width: 80px!important; 
+    }
+}
+@media screen and (max-width: 355px) {
+    .header-v6 .navbar-brand {
+        padding-top: 13px!important;
+        padding-right: 0px!important;
+        padding-left: 0px!important;
+        width: 60px!important; 
+    }
+}
+/* END Boton Ingresar usuario deslogueado */
+
+/*Cargador de paginas*/
+.page-enter{
+    z-index: 999999;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .8);
+    transition: width .3s, height .3s, margin .3s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.page-enter.hello{
+    display: block
+}
+
+body > div.page-enter > div > center{
+    width: 100%;
+}
+
+.page-enter.bye{
+    width: 0%;
+    height: 0vh;
+    margin: 0 auto;
+    position: absolute;
+    transition: .2s;
+    opacity: 0;
+}
+
+.content-enter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+
+.text-cargando{
+    color: #ffffff;
+}
+
+body > div.page-enter > div > center > div:nth-child(2){
+    font-size: 30px;
+}
+
+body > div.page-enter > div > center > div:nth-child(3){
+    font-size: 18px;
+}
+
+@keyframes jump {
+  0%{
+    transform: translateY(0);
+  }
+  20%{
+    transform: translateY(0);
+  }
+  40%{
+    transform: translateY(-30px);
+  }
+  50%{
+    transform: translateY(0);
+  }
+  60%{
+    transform: translateY(-15px);
+  }
+  80%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+ 
+.swingimage{
+    text-align: center;
+    width: 25%;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+    animation: jump 1.5s ease-in-out forwards infinite;
+}
+
+.spinner {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 2147483647;
+    text-align: center;
+    background-color: rgba(0,0,0,.8);
+}
+
+.spinner > div {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner.hide-spinner{
+    transition: .5s;
+    display: none;
+}
+
+.spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+    0%, 80%, 100% { 
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    } 40% { 
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}
+
+.px-valign{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+
+    align-items: center;
+    justify-content: center; }
+/*Cargador de paginas*/

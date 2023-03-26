@@ -1,0 +1,6 @@
+var	Chukupax;
+				$(document).ready(function() {
+				Chukupax = new chukupax();
+				Chukupax.basePath = "";
+				Chukupax.init();	
+			});
